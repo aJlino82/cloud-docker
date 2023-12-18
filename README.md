@@ -18,6 +18,12 @@ Na mesma pasta onde você baixou a imagem execute o seguinte comando no terminal
 ```
 docker run -p 8080:8080 projeto-final
 ````
-
-
-
+Para acessar o aplicativo basta agora você digitar no seu navegador 
+```
+http://localhost:8080
+```
+Para interagir com a aplicação basta você adicionar ao final do endereço
+o seu nome dessa forma "/seu-nome" como no exemplo:
+```
+http://localhost:8080/Adailton
+````
