@@ -7,4 +7,17 @@ Ele expõe um endpoint para cumprimentar uma pessoa pelo nome.
 ## Pré-requisitos
 
 Certifique-se de ter o Docker instalado em sua máquina.
-Para mais informações sobre como instalar o Docker, consulte
+
+## Instalação
+
+Para baixar execute o comando no terminal certifique-se de ter permissões de administrador:
+````
+docker pull seu-usuario/projeto-final:latest
+````
+Na mesma pasta onde você baixou a imagem execute o seguinte comando no terminal certifique-se de ter permissões de administrador:
+```
+docker run -p 8080:8080 projeto-final
+````
+
+
+
