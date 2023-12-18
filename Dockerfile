@@ -1,6 +1,7 @@
 FROM openjdk:17-alpine
-    ENV APP_NAME projeto-final
-    COPY ./target/${APP_NAME}.jar /final/${APP_NAME}.jar
-    WORKDIR /final
-    CMD java -jar ${APP_NAME}.jar
-    EXPOSE 8080
+
+FROM openjdk:17-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/projeto-final.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
